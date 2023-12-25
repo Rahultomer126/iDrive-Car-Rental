@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arman Moalemi">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Car Rental Signup Styles.css">
+    <link rel="icon" href="Car Rental imgs/command.png">
+    <title>Car Rental</title>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="container-1">
+            <div class="container-1-1">
+                <img src="Car Rental imgs/The more we take care of our car, the more it takes care of me..jpg" alt=""
+                    class="car-png">
+            </div>
+            <div class="container-1-2">
+                <h1 class="header-1">
+                    Welcome to CarGo Rentals
+                </h1>
+                <form id="contact">
+                    <center><div class="alert">Registration!</div></center>
+
+                    <label for="name" class="signup">Full Name<br><input type="text" name="" id="name"
+                            placeholder="Enter Your Name" required></label>
+                    <label for="email" class="signup">Email<br><input type="text" name="" id="email"
+                            placeholder="Enter your Email here" required></label>
+                    <label for="passwordInput" class="signup pass">
+                        Password<br>
+                        <input type="password" name="" id="passwordInput" placeholder="Enter your Password" required
+                            id="paswd">
+                        <button class="password-visibility" type="button" aria-label="password visibility"
+                            title="Password Visibility" onclick="visibility()" id="visibilityBtn"><i class="fa fa-eye"
+                                aria-hidden="true"></i></button>
+                    </label>
+                    <button type="button" id="show-button" class="create-acc" aria-label="create account"
+                        onclick="showMessage()">Create Account</button>
+
+
+
+
+                    <!-- Overlay and message box -->
+                    <div id="overlay">
+                        <div id="message-box">
+                            <p>Account Created Succesfully !!</p>
+                            <br>
+                            <a href="Car Rental Login.html"> <button id="abc"
+                                    onclick="location.href='Car Rental Login.html' ">Login</button></a>
+                        </div>
+                    </div>
+
+
+
+                </form>
+
+                <div class="login-text">
+                    Already have an account?
+                    <a href="Car Rental Login.html" class="login">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase.js"></script>
+
+<script src="Car Rental Signup Script.js"></script>
+
+
+</html>

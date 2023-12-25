@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="author" content="Arman Moalemi">
+    <title>Category Car Rent</title>
+    <!-- <link rel="stylesheet" href="Car Rental Style.css"> -->
+    <link rel="stylesheet" href="Car Category Style.css">
+    <link rel="icon" href="Car Rental imgs/command.png">
+    <script src="Car Category Script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <!-- nav -->
+    <nav class="navbar">
+        <!-- LOGO -->
+        <!-- <div class="logo"><img src="logo.png" alt=""></div> -->
+        <div class="logo"><a href="index.html" class="company-name"><img src="../../Car Rental imgs/iDrive.png" alt=""></a>
+        </div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li class="services">
+                    <a href="aboutus.html" target="">About</a>
+                </li>
+                <li><a href="faq.html" target="">FAQs</a></li>
+                <li><a href="contact.html" target="">Contact</a></li>
+                <button type="button" class="btn btn-primary"><a href="Car Rental Signup.html" id="btn-register" target=""> REGISTER</a></button>
+            </div>
+        </ul>
+      </nav>
+
+<div class="mycontainer" id="myContainer">
+    <div class="filter-box" id="filterContainer">
+        <div class="filter-container">
+            <div class="type">
+                <span class="span-2">TYPE</span><br><br>
+                <label for="sedan">
+                    <input type="radio" name="type-capacity" id="sedan" class="radio-filterbox" onclick="sedanFunction()">Sedan <span class="span-1">(4)</span>
+                </label><br><br>
+                <label for="SUV">
+                    <input type="radio" name="type-capacity" id="SUV" class="radio-filterbox" onclick="SUVFunction()">SUV <span class="span-1">(4)</span>
+                </label><br><br>
+                <label for="Hatch">
+                    <input type="radio" name="type-capacity" id="Hatch" class="radio-filterbox" onclick="hatchbackFunction()">Hatchback <span class="span-1">(4)</span>
+                </label><br><br>
+                <label for="Luxury">
+                    <input type="radio" name="type-capacity" id="Luxury" class="radio-filterbox" onclick="luxuryFunction()">Luxury <span class="span-1">(4)</span>
+                </label><br><br>
+                <label for="MPV">
+                    <input type="radio" name="type-capacity" id="MPV" class="radio-filterbox" onclick="MPVFunction()">MPV <span class="span-1">(4)</span>
+                </label><br><br>
+                <!-- <label for="coupe">
+                    <input type="radio" name="type-capacity" id="coupe" class="radio-filterbox" onclick="coupeFunction()">Hatch <span class="span-1">(5)</span>
+                </label><br><br> -->
+                <!-- <label for="hatchback">
+                    <input type="radio" name="type-capacity" id="hatchback" class="radio-filterbox" onclick="hatchbackFunction()">Hatchback <span class="span-1">(2)</span>
+                </label> -->
+            </div><br><br>
+            <div class="capacity">
+                <span class="span-2">CAPACITY</span><br><br>
+                <label for="4">
+                    <input type="radio" name="type-capacity" id="4" class="radio-filterbox" onclick="fourFunction()">4 Person <span class="span-1">(7)</span>
+                </label><br><br>
+                <label for="5">
+                    <input type="radio" name="type-capacity" id="5" class="radio-filterbox" onclick="fiveFunction()">5 Person <span class="span-1">(7)</span>
+                </label><br><br>
+                <label for="7">
+                    <input type="radio" name="type-capacity" id="7" class="radio-filterbox" onclick="sevenFunction()">7 Person <span class="span-1">(4)</span>
+                </label><br><br>
+                <label for="11">
+                    <input type="radio" name="type-capacity" id="11" class="radio-filterbox" onclick="elevenFunction()">11 Person <span class="span-1">(2)</span>
+                </label>
+            </div><br><br>
+            <!-- <div class="price"><span class="span-2">Price</span><br><br>
+                <input id="myinput" min="0" max="100" type="range" value="100" class="slider" />
+                <p style="font-family:Plus Jakarta Sans; font-size:14px; color:black">Value: <span id="demo" style="font-family:Plus Jakarta Sans; font-size:14px; color:black;"></span>$</p>
+                <div class="span-1" style="color:rgba(89, 103, 128, 1); font-weight:600;">Max. $100.00</div>
+            </div><br><br> -->
+        </div>
+        <!-- <script>
+            var slider = document.getElementById("myinput");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+            
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+            }
+            </script> -->
+
+
+    </div>
+    <div class="content">
+    <!-- section-2 -->
+        <!-- <div class="container-2">
+            <div class="pickup">
+                <label for="" class="checkbox-1"><input type="radio" name="one" checked>Pick-Up</label>
+                <div class="container-3">
+                    <div class="select-title location">Location</div>
+                    <div class="select-title date">Date</div>
+                    <div class="select-title time">Time</div>
+                    <select name="" id="" class="select-location">
+                        <option value="0" class="personal-info">Select your city</option>
+                    </select>
+                    <select name="" id="" class="select-date">
+                        <option value="0" class="personal-info">Select your date</option>
+                    </select>
+                    <select name="" id="" class="select-time">
+                        <option value="0" class="personal-info">Select your time</option>
+                    </select>
+                    <select name="" id="" class="select-location-res">
+                        <option value="0" class="personal-info">Select</option>
+                    </select>
+                    <select name="" id="" class="select-date-res">
+                        <option value="0" class="personal-info">Select</option>
+                    </select>
+                    <select name="" id="" class="select-time-res">
+                        <option value="0" class="personal-info">Select</option>
+                    </select>
+                    <div class="line one"></div>
+                    <div class="line two"></div>
+                </div>
+            </div>  
+            <div class="swap">
+                <button class="btn-swap"><img src="Car Rental imgs/Swap.png" class="swap-img"></button>
+            </div>
+            <div class="dropoff">
+                <label for="" class="checkbox-1"><input type="radio" name="one">Drop-Off</label>
+                <div class="container-3">
+                    <div class="select-title location">Location</div>
+                    <div class="select-title date">Date</div>
+                    <div class="select-title time">Time</div>
+                    <select name="" id="" class="select-location">
+                        <option value="0" class="personal-info">Select your city</option>
+                    </select>
+                    <select name="" id="" class="select-date">
+                        <option value="0" class="personal-info">Select your date</option>
+                    </select>
+                    <select name="" id="" class="select-time">
+                        <option value="0" class="personal-info">Select your time</option>
+                    </select>
+                    <select name="" id="" class="select-location-res">
+                        <option value="0" class="personal-info">Select</option>
+                    </select>
+                    <select name="" id="" class="select-date-res">
+                        <option value="0" class="personal-info">Select</option>
+                    </select>
+                    <select name="" id="" class="select-time-res">
+                        <option value="0" class="personal-info">Select</option>
+                    </select>
+                    <div class="line one"></div>
+                    <div class="line two"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- section-3 -->
+        <!-- <div class="container-4-no-content" id="noContent">
+            Try again later.
+        </div> -->
+        <div class="container-4">
+            <div class="rent-popular" id="sedanOne">
+                <div class="section-1">
+                    <h3 class="car-name">Accord</h3>
+                    <p class="car-class">Sedan</p>
+                    <!-- <button onclick="favorited1()" class="favorite-button" id="favorite1" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <img src="Car Rental imgs/Accord/accord(out).jpeg" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt=""class="gas-capacity-pic"><p class="pic-detail">55L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt=""class="gearbox-pic"><p class="pic-detail">Automatic</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt=""class="people-capacity-pic"><p class="pic-detail">5 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  350/<span style="color:#90A3BF;">hour</span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='cars/Accord.html'">Rent-Now</button>
+                </div>
+            </div>
+            
+            <div class="rent-popular" id="myHatch-1">
+                <div class="section-1">
+                    <h3 class="car-name">Baleno</h3>
+                    <p class="car-class">Hatchback</p>
+                    <!-- <button onclick="favorited2()" class="favorite-button" id="favorite2" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Baleno/Baleno ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt=""class="gas-capacity-pic"><p class="pic-detail">37L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt=""class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt=""class="people-capacity-pic"><p class="pic-detail">4 People</p>
+                    </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  280/<span style="color:#90A3BF;"><span style="color:#90A3BF;">hour</span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='cars/Baleno.html';">Rent-Now</button>
+                </div>
+            </div>
+            <div class="rent-popular" id="myLux-1">
+                <div class="section-1">
+                    <h3 class="car-name">Audi Q7</h3>
+                    <p class="car-class">Luxury</p>
+                    <!-- <button onclick="favorited3()" class="favorite-button" id="favorite3" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Audi q7/Audi q7 ext.jpeg" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt=""class="gas-capacity-pic"><p class="pic-detail">57L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt=""class="gearbox-pic"><p class="pic-detail">Automatic</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt=""class="people-capacity-pic"><p class="pic-detail">7 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  580/<span style="color:#90A3BF;">hour</span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='cars/Audi Q7.html'">Rent-Now</button>
+                </div>
+            </div>
+            
+            <div class="rent-popular" id="myMPV-1">
+                <div class="section-1">
+                    <h3 class="car-name">Carnival</h3>
+                    <p class="car-class">MPV</p>
+                    <!-- <button onclick="favorited4()" class="favorite-button" id="favorite5" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <img src="Car Rental imgs/Carnival/Carnival ext.png" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">65L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">11 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  500/<span style="color:#90A3BF;">hour</span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='cars/Carnival.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="mySUV-1">
+                <div class="section-1">
+                    <h3 class="car-name">Creta</h3>
+                    <p class="car-class">SUV</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Creta/Creta ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">60L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">5 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  420/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/Creta.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="sedanTwo">
+                <div class="section-1">
+                    <h3 class="car-name">Dzire</h3>
+                    <p class="car-class">Sedan</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Dzire/Dzire ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">55L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">4 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  300/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/Dzire.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="myHatch-2">
+                <div class="section-1">
+                    <h3 class="car-name">i10</h3>
+                    <p class="car-class">Hatchback</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Grand i10/i10 ext.jpeg" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">38L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">4 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  280/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/i10.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="myLux-2">
+                <div class="section-1">
+                    <h3 class="car-name">Land Cruiser</h3>
+                    <p class="car-class">Luxury</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Land Cruiser/Landc ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">58L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Automatic</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">7 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  550/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/LandCruiser.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="myMPV-2">
+                <div class="section-1">
+                    <h3 class="car-name">Ertiga</h3>
+                    <p class="car-class">MPV</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Ertiga/Ertiga ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">62L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">7 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  370/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/Ertiga.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="mySUV-2">
+                <div class="section-1">
+                    <h3 class="car-name">Seltos</h3>
+                    <p class="car-class">SUV</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Seltos/Seltos ext.jpg" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">58L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">5 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  440/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/Seltos.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="sedanThree">
+                <div class="section-1">
+                    <h3 class="car-name">Corolla</h3>
+                    <p class="car-class">Sedan</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Corolla/Corolla ext.jpeg" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">50L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Automatic</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">5 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  360/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/Corolla.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="myHatch-3">
+                <div class="section-1">
+                    <h3 class="car-name">Kwid</h3>
+                    <p class="car-class">Hatchback</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Kwid/Kwid ext.jpeg.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">35L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">4 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  200/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/Kwid.html'">Rent-Now</button>
+                </div>
+            </div>
+            
+            <div class="rent-popular" id="myLux-3">
+                <div class="section-1">
+                    <h3 class="car-name">BMW Series 3</h3>
+                    <p class="car-class">Luxury</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/BMW Series 3/BMW Series3 ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">58L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Automatic</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">4 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  500/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/BMW Series 3.html'">Rent-Now</button>
+                </div>
+            </div>
+            
+            <div class="rent-popular" id="myMPV-3">
+                <div class="section-1">
+                    <h3 class="car-name">Cruiser</h3>
+                    <p class="car-class">MPV</p>
+                    <!-- <button onclick="favorited7()" class="favorite-button" id="favorite9" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <img src="Car Rental imgs/Cruiser/Cruiser ext.jpeg" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">65L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">11 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  330/<span style="color:#90A3BF;">hour</span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='cars/Cruiser.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="mySUV-3">
+                <div class="section-1">
+                    <h3 class="car-name">Safari</h3>
+                    <p class="car-class">SUV</p>
+                    <!-- <button onclick="favorited8()" class="favorite-button" id="favorite10" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Safari/Safari ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">62L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">5 People</p>
+                    </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  470/<span style="color:#90A3BF;"><span style="color:#90A3BF;">hour</span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='cars/Safari.html'">Rent-Now</button>
+                </div>
+            </div>
+            <div class="rent-popular" id="sedanFour">
+                <div class="section-1">
+                    <h3 class="car-name">Verna</h3>
+                    <p class="car-class">Sedan</p>
+                    <!-- <button onclick="favorited9()" class="favorite-button" id="favorite11" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="Car Rental imgs/Verna/Verna ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">54L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">5 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  400/<span style="color:#90A3BF;">hour</span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='cars/verna.html'">Rent-Now</button>
+                </div>
+            </div>
+            
+            <div class="rent-popular" id="myHatch-4">
+                <div class="section-1">
+                    <h3 class="car-name">i20</h3>
+                    <p class="car-class">Hatchback</p>
+                    <!-- <button onclick="favorited12()" class="favorite-button" id="favorite12" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <img src="Car Rental imgs/i20/i20 ext.jpeg" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">38L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">4 People</p>
+                    </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  290/<span style="color:#90A3BF;">hour<br></span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='cars/i20.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="myLux-4">
+                <div class="section-1">
+                    <h3 class="car-name">Mercedex eclass</h3>
+                    <p class="car-class">Luxury</p>
+                    <!-- <button onclick="favorited12()" class="favorite-button" id="favorite12" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <img src="Car Rental imgs/Mercedes e class/Mercedes eclass ext.jpeg" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">57L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Automatic</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">4 People</p>
+                    </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  560/<span style="color:#90A3BF;">hour<br></span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='cars/E Class.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="myMPV-4">
+                <div class="section-1">
+                    <h3 class="car-name">Innova</h3>
+                    <p class="car-class">MPV</p>
+                    <!-- <button onclick="favorited12()" class="favorite-button" id="favorite12" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <img src="Car Rental imgs/Innova/Innova ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">66L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">7 People</p>
+                    </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  410/<span style="color:#90A3BF;">hour<br></span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='cars/Innova.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="mySUV-4">
+                <div class="section-1">
+                    <h3 class="car-name">Harrier</h3>
+                    <p class="car-class">SUV</p>
+                    <!-- <button onclick="favorited12()" class="favorite-button" id="favorite12" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <img src="Car Rental imgs/Harrier/Harrier ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">62L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">5 People</p>
+                    </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  470/<span style="color:#90A3BF;">hour<br></span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='cars/Harrier.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <!-- section-4 -->
+            <!-- <div class="popular-view-top-of-footer">
+                <button class="show-more-car">Show more car</button>
+                <div class="car-count">120 cars</div>
+            </div> -->
+
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- section-5 -->
+
+    
+
+
+
+
+
+
+    <script src="Car Rental.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+function sedanFunction() {
+  document.getElementById("sedanOne").style.display = "inline-block";
+  document.getElementById("sedanTwo").style.display = "inline-block";
+  document.getElementById("sedanThree").style.display = "inline-block";
+  document.getElementById("sedanFour").style.display = "inline-block";
+  document.getElementById("myHatch-1").style.display = "none";
+  document.getElementById("myHatch-2").style.display = "none";
+  document.getElementById("myHatch-3").style.display = "none";
+  document.getElementById("myHatch-4").style.display = "none";
+  document.getElementById("myLux-1").style.display = "none";
+  document.getElementById("myLux-2").style.display = "none";
+  document.getElementById("myLux-3").style.display = "none";
+  document.getElementById("myLux-4").style.display = "none";
+  document.getElementById("myMPV-1").style.display = "none";
+  document.getElementById("myMPV-2").style.display = "none";
+  document.getElementById("myMPV-3").style.display = "none";
+  document.getElementById("myMPV-4").style.display = "none";
+  document.getElementById("mySUV-1").style.display = "none";
+  document.getElementById("mySUV-2").style.display = "none";
+  document.getElementById("mySUV-3").style.display = "none";
+  document.getElementById("mySUV-4").style.display = "none";
+
+  document.getElementById("myContainer").style.height = "fit-content";
+  document.getElementById("noContent").style.display = "grid";
+  document.getElementById("filterContainer").style.borderBottomRightRadius = "10px";
+}
+function SUVFunction() {
+  document.getElementById("sedanOne").style.display = "none";
+  document.getElementById("sedanTwo").style.display = "none";
+  document.getElementById("sedanThree").style.display = "none";
+  document.getElementById("sedanFour").style.display = "none";
+  document.getElementById("myHatch-1").style.display = "none";
+  document.getElementById("myHatch-2").style.display = "none";
+  document.getElementById("myHatch-3").style.display = "none";
+  document.getElementById("myHatch-4").style.display = "none";
+  document.getElementById("myLux-1").style.display = "none";
+  document.getElementById("myLux-2").style.display = "none";
+  document.getElementById("myLux-3").style.display = "none";
+  document.getElementById("myLux-4").style.display = "none";
+  document.getElementById("myMPV-1").style.display = "none";
+  document.getElementById("myMPV-2").style.display = "none";
+  document.getElementById("myMPV-3").style.display = "none";
+  document.getElementById("myMPV-4").style.display = "none";
+  document.getElementById("mySUV-1").style.display = "inline-block";
+  document.getElementById("mySUV-2").style.display = "inline-block";
+  document.getElementById("mySUV-3").style.display = "inline-block";
+  document.getElementById("mySUV-4").style.display = "inline-block";
+  
+  document.getElementById("myContainer").style.height = "fit-content";
+  document.getElementById("noContent").style.display = "grid";
+    document.getElementById("filterContainer").style.borderBottomRightRadius = "10px";
+}
+function hatchbackFunction() {
+  document.getElementById("sedanOne").style.display = "none";
+  document.getElementById("sedanTwo").style.display = "none";
+  document.getElementById("sedanThree").style.display = "none";
+  document.getElementById("sedanFour").style.display = "none";
+  document.getElementById("myHatch-1").style.display = "inline-block";
+  document.getElementById("myHatch-2").style.display = "inline-block";
+  document.getElementById("myHatch-3").style.display = "inline-block";
+  document.getElementById("myHatch-4").style.display = "inline-block";
+  document.getElementById("myLux-1").style.display = "none";
+  document.getElementById("myLux-2").style.display = "none";
+  document.getElementById("myLux-3").style.display = "none";
+  document.getElementById("myLux-4").style.display = "none";
+  document.getElementById("myMPV-1").style.display = "none";
+  document.getElementById("myMPV-2").style.display = "none";
+  document.getElementById("myMPV-3").style.display = "none";
+  document.getElementById("myMPV-4").style.display = "none";
+  document.getElementById("mySUV-1").style.display = "none";
+  document.getElementById("mySUV-2").style.display = "none";
+  document.getElementById("mySUV-3").style.display = "none";
+  document.getElementById("mySUV-4").style.display = "none";
+
+  document.getElementById("myContainer").style.height = "fit-content";
+  document.getElementById("noContent").style.display = "none";
+    document.getElementById("filterContainer").style.borderBottomRightRadius = "10px";
+}
+function luxuryFunction() {
+  document.getElementById("sedanOne").style.display = "none";
+  document.getElementById("sedanTwo").style.display = "none";
+  document.getElementById("sedanThree").style.display = "none";
+  document.getElementById("sedanFour").style.display = "none";
+  document.getElementById("myHatch-1").style.display = "none";
+  document.getElementById("myHatch-2").style.display = "none";
+  document.getElementById("myHatch-3").style.display = "none";
+  document.getElementById("myHatch-4").style.display = "none";
+  document.getElementById("myLux-1").style.display = "inline-block";
+  document.getElementById("myLux-2").style.display = "inline-block";
+  document.getElementById("myLux-3").style.display = "inline-block";
+  document.getElementById("myLux-4").style.display = "inline-block";
+  document.getElementById("myMPV-1").style.display = "none";
+  document.getElementById("myMPV-2").style.display = "none";
+  document.getElementById("myMPV-3").style.display = "none";
+  document.getElementById("myMPV-4").style.display = "none";
+  document.getElementById("mySUV-1").style.display = "none";
+  document.getElementById("mySUV-2").style.display = "none";
+  document.getElementById("mySUV-3").style.display = "none";
+  document.getElementById("mySUV-4").style.display = "none";
+
+  document.getElementById("myContainer").style.height = "fit-content";
+  document.getElementById("noContent").style.display = "none";
+    document.getElementById("filterContainer").style.borderBottomRightRadius = "10px";
+}
+function MPVFunction() {
+  document.getElementById("sedanOne").style.display = "none";
+  document.getElementById("sedanTwo").style.display = "none";
+  document.getElementById("sedanThree").style.display = "none";
+  document.getElementById("sedanFour").style.display = "none";
+  document.getElementById("myHatch-1").style.display = "none";
+  document.getElementById("myHatch-2").style.display = "none";
+  document.getElementById("myHatch-3").style.display = "none";
+  document.getElementById("myHatch-4").style.display = "none";
+  document.getElementById("myLux-1").style.display = "none";
+  document.getElementById("myLux-2").style.display = "none";
+  document.getElementById("myLux-3").style.display = "none";
+  document.getElementById("myLux-4").style.display = "none";
+  document.getElementById("myMPV-1").style.display = "inline-block";
+  document.getElementById("myMPV-2").style.display = "inline-block";
+  document.getElementById("myMPV-3").style.display = "inline-block";
+  document.getElementById("myMPV-4").style.display = "inline-block";
+  document.getElementById("mySUV-1").style.display = "none";
+  document.getElementById("mySUV-2").style.display = "none";
+  document.getElementById("mySUV-3").style.display = "none";
+  document.getElementById("mySUV-4").style.display = "none";
+
+  document.getElementById("myContainer").style.height = "fit-content";
+  document.getElementById("noContent").style.display = "grid";
+    document.getElementById("filterContainer").style.borderBottomRightRadius = "10px";
+}
+
+
+function fourFunction() {
+  document.getElementById("sedanOne").style.display = "none";
+  document.getElementById("sedanTwo").style.display = "inline-block";
+  document.getElementById("sedanThree").style.display = "none";
+  document.getElementById("sedanFour").style.display = "none";
+  document.getElementById("myHatch-1").style.display = "inline-block";
+  document.getElementById("myHatch-2").style.display = "inline-block";
+  document.getElementById("myHatch-3").style.display = "inline-block";
+  document.getElementById("myHatch-4").style.display = "inline-block";
+  document.getElementById("myLux-1").style.display = "none";
+  document.getElementById("myLux-2").style.display = "none";
+  document.getElementById("myLux-3").style.display = "inline-block";
+  document.getElementById("myLux-4").style.display = "inline-block";
+  document.getElementById("myMPV-1").style.display = "none";
+  document.getElementById("myMPV-2").style.display = "none";
+  document.getElementById("myMPV-3").style.display = "none";
+  document.getElementById("myMPV-4").style.display = "none";
+  document.getElementById("mySUV-1").style.display = "none";
+  document.getElementById("mySUV-2").style.display = "none";
+  document.getElementById("mySUV-3").style.display = "none";
+  document.getElementById("mySUV-4").style.display = "none";
+  document.getElementById("myContainer").style.height = "fit-content";
+  document.getElementById("noContent").style.display = "none";
+    document.getElementById("filterContainer").style.borderBottomRightRadius = "10px";
+}
+function fiveFunction() {
+  document.getElementById("sedanOne").style.display = "inline-block";
+  document.getElementById("sedanTwo").style.display = "none";
+  document.getElementById("sedanThree").style.display = "inline-block";
+  document.getElementById("sedanFour").style.display = "inline-block";
+  document.getElementById("myHatch-1").style.display = "none";
+  document.getElementById("myHatch-2").style.display = "none";
+  document.getElementById("myHatch-3").style.display = "none";
+  document.getElementById("myHatch-4").style.display = "none";
+  document.getElementById("myLux-1").style.display = "none";
+  document.getElementById("myLux-2").style.display = "none";
+  document.getElementById("myLux-3").style.display = "none";
+  document.getElementById("myLux-4").style.display = "none";
+  document.getElementById("myMPV-1").style.display = "none";
+  document.getElementById("myMPV-2").style.display = "none";
+  document.getElementById("myMPV-3").style.display = "none";
+  document.getElementById("myMPV-4").style.display = "none";
+  document.getElementById("mySUV-1").style.display = "inline-block";
+  document.getElementById("mySUV-2").style.display = "inline-block";
+  document.getElementById("mySUV-3").style.display = "inline-block";
+  document.getElementById("mySUV-4").style.display = "inline-block";
+  document.getElementById("myContainer").style.height = "fit-content";
+  document.getElementById("noContent").style.display = "none";
+  document.getElementById("filterContainer").style.borderBottomRightRadius = "10px";
+}
+function sevenFunction() {
+  document.getElementById("sedanOne").style.display = "none";
+  document.getElementById("sedanTwo").style.display = "none";
+  document.getElementById("sedanThree").style.display = "none";
+  document.getElementById("sedanFour").style.display = "none";
+  document.getElementById("myHatch-1").style.display = "none";
+  document.getElementById("myHatch-2").style.display = "none";
+  document.getElementById("myHatch-3").style.display = "none";
+  document.getElementById("myHatch-4").style.display = "none";
+  document.getElementById("myLux-1").style.display = "inline-block";
+  document.getElementById("myLux-2").style.display = "inline-block";
+  document.getElementById("myLux-3").style.display = "none";
+  document.getElementById("myLux-4").style.display = "none";
+  document.getElementById("myMPV-1").style.display = "none";
+  document.getElementById("myMPV-2").style.display = "inline-block";
+  document.getElementById("myMPV-3").style.display = "none";
+  document.getElementById("myMPV-4").style.display = "inline-block";
+  document.getElementById("mySUV-1").style.display = "none";
+  document.getElementById("mySUV-2").style.display = "none";
+  document.getElementById("mySUV-3").style.display = "none";
+  document.getElementById("mySUV-4").style.display = "none";
+  document.getElementById("myContainer").style.height = "fit-content";
+  document.getElementById("noContent").style.display = "none";
+  document.getElementById("filterContainer").style.borderBottomRightRadius = "10px";
+}
+function elevenFunction() {
+  document.getElementById("sedanOne").style.display = "none";
+  document.getElementById("sedanTwo").style.display = "none";
+  document.getElementById("sedanThree").style.display = "none";
+  document.getElementById("sedanFour").style.display = "none";
+  document.getElementById("myHatch-1").style.display = "none";
+  document.getElementById("myHatch-2").style.display = "none";
+  document.getElementById("myHatch-3").style.display = "none";
+  document.getElementById("myHatch-4").style.display = "none";
+  document.getElementById("myLux-1").style.display = "none";
+  document.getElementById("myLux-2").style.display = "none";
+  document.getElementById("myLux-3").style.display = "none";
+  document.getElementById("myLux-4").style.display = "none";
+  document.getElementById("myMPV-1").style.display = "inline-block";
+  document.getElementById("myMPV-2").style.display = "none";
+  document.getElementById("myMPV-3").style.display = "inline-block";
+  document.getElementById("myMPV-4").style.display = "none";
+  document.getElementById("mySUV-1").style.display = "none";
+  document.getElementById("mySUV-2").style.display = "none";
+  document.getElementById("mySUV-3").style.display = "none";
+  document.getElementById("mySUV-4").style.display = "none";
+  document.getElementById("myContainer").style.height = "fit-content";
+  document.getElementById("noContent").style.display = "none";
+  document.getElementById("filterContainer").style.borderBottomRightRadius = "10px";
+}

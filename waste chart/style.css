@@ -1,0 +1,28 @@
+.content {
+    width: 1200px;
+    margin: 100px auto;
+  }
+  h1 {
+    margin-bottom: 50px;
+    text-align: center;
+    
+  }
+  p {
+    text-align: center;
+    font-weight: bold;
+  }
+ 
+  #chartone {
+    height: 300px;
+    width: 330px;
+    float: left;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  /* #charttwo {
+    height: 300px;
+    width: 330px;
+    float: left;
+    margin-left: 40px;
+    margin-right: 0;
+  } */

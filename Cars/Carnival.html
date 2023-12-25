@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="author" content="Arman Moalemi">
+    <title>Carnival Rental Details</title>
+    <link rel="stylesheet" href="preview-cars-styles.css">
+    <!-- <link href="Car Category Style.css" rel="stylesheet"> -->
+    <link rel="icon" href="../Car Rental imgs/command.png">
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="Preview.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <!-- <div class="logo"><img src="logo.png" alt=""></div> -->
+        <div class="logo"><a href="../index.html" class="company-name"><img src="../../Car Rental imgs/iDrive.png" alt=""></a>
+        </div>
+        <!-- NAVIGATION MENU -->
+       <ul class="nav-links">
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+              <li class="services">
+                    <a href="../aboutus.html" target="">About</a>
+                </li>
+                <li><a href="../faq.html" target="">FAQs</a></li>
+                <li><a href="../contact.html" target="">Contact</a></li>
+                <!-- <button type="button" class="btn btn-primary"><a href="reg.html" id="btn-register" target="_blank"> REGISTER</a></button> -->
+ 
+ 
+            </div>
+ 
+        </ul>
+    </nav>
+
+
+    <!-- section-1 -->
+<div class="mycontainer" id="myContainer">
+    <div class="filter-box" id="filterContainer">
+        <div class="filter-container">
+            <div class="type">
+                <span class="span-2">TYPE</span><br><br>
+                <label for="sport">
+                    <input type="radio" name="type-capacity" id="sport" class="radio-filterbox" onclick="location.href='../Car Category.html';">Sedan <span class="span-1">(4)</span>
+                </label><br><br>
+                <label for="SUV">
+                    <input type="radio" name="type-capacity" id="SUV" class="radio-filterbox" onclick="location.href='../Car Category.html';">SUV <span class="span-1">(4)</span>
+                </label><br><br>
+                <label for="MPV">
+                    <input type="radio" name="type-capacity" id="MPV" class="radio-filterbox" onclick="location.href='../Car Category.html';">Luxury <span class="span-1">(4)</span>
+                </label><br><br>
+                <label for="sedan">
+                    <input type="radio" name="type-capacity" id="sedan" class="radio-filterbox" onclick="location.href='../Car Category.html';">Hatchback <span class="span-1">(4)</span>
+                </label><br><br>
+                <label for="coupe">
+                    <input type="radio" name="type-capacity" id="coupe" class="radio-filterbox" onclick="location.href='../Car Category.html';">MPV <span class="span-1">(4)</span>
+                </label><br><br>
+                <!-- <label for="hatchback">
+                    <input type="radio" name="type-capacity" id="hatchback" class="radio-filterbox" onclick="location.href='../Car Category.html';">Hatchback <span class="span-1">(2)</span>
+                </label> -->
+            </div><br><br>
+            <div class="capacity">
+                <span class="span-2">CAPACITY</span><br><br>
+                <label for="2">
+                    <input type="radio" name="type-capacity" id="2" class="radio-filterbox" onclick="location.href='../Car Category.html';">4 Person <span class="span-1">(7)</span>
+                </label><br><br>
+                <label for="4">
+                    <input type="radio" name="type-capacity" id="4" class="radio-filterbox" onclick="location.href='../Car Category.html';">5 Person <span class="span-1">(7)</span>
+                </label><br><br>
+                <label for="6">
+                    <input type="radio" name="type-capacity" id="6" class="radio-filterbox" onclick="location.href='../Car Category.html';">7 Person <span class="span-1">(4)</span>
+                </label><br><br>
+                <label for="8">
+                    <input type="radio" name="type-capacity" id="8" class="radio-filterbox" onclick="location.href='../Car Category.html';">11 Person <span class="span-1">(2)</span>
+                </label>
+            </div><br><br>
+            <!-- <div class="price"><span class="span-2">Price</span><br><br>
+                <input id="myinput" min="0" max="100" type="range" value="100" class="slider" onclick="location.href='../Car Category.html';"/>
+                <p style="font-family:Plus Jakarta Sans; font-size:14px; color:black">Value: <span id="demo" style="font-family:Plus Jakarta Sans; font-size:14px; color:black;"></span>$</p>
+                <div class="span-1" style="color:rgba(89, 103, 128, 1); font-weight:600;">Max. &#8377;  1000</div>
+            </div><br><br> -->
+        </div>
+        <script>
+            var slider = document.getElementById("myinput");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+              output.innerHTML = this.value;
+            }
+            </script>
+    </div>
+
+    <div class="content">
+    <!-- section-2 -->
+        <div class="container-1">
+            <div class="car-pic-container-1">
+                <img src="../Car Rental imgs/Carnival/Carnival ext.png" class="new-pics-all-new-rush" id="slide-1">
+                <img src="../Car Rental imgs/Carnival/Carnival 1.jpeg.webp" class="nissan-gtr-inside one" id="slide-2">
+                <img src="../Car Rental imgs/Carnival/Carnival 2.jpg.webp" class="nissan-gtr-inside two" id="slide-3">
+                <h2 class="hcar-pic">
+                    Sports car with the best design and acceleration
+                </h2>
+                <p class="pcar-pic">
+                    Safety and comfort while driving a
+                    futuristic and elegant sports car
+                </p>
+                <div class="rectdiv-1">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                </div>
+                <div class="rectdiv-2">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows">
+                </div>
+                <div class="rectdiv-3">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                    <img src="../Car Rental imgs/rectangle.png" class="arrows top-bottom">
+                </div>
+                <div class="selector-container">
+                    <div class="carpics-div selected-1" id="carPicsSelected1">
+                        <button class="carpic-button one" onclick="mySlider1()"><img src="../Car Rental imgs/Accord/accord(out).jpeg" alt="" class="carpic selected" id="selectedCar">
+                    </div>
+                    <div class="carpics-div selected-2" id="carPicsSelected2"> 
+                        <button class="carpic-button two" onclick="mySlider2()"><img src="../Car Rental imgs/Accord/inside-1.png" alt="" class="carpic inside-1" id="insideCar2">
+                    </div>
+                    <div class="carpics-div margin selected-3" id="carPicsSelected3">
+                        <button class="carpic-button three" onclick="mySlider3()"><img src="../Car Rental imgs/Accord/inside-2.png" alt="" class="carpic inside-2" id="insideCar3">
+                    </div>
+                </div>
+            </div>
+            <div class="car-detail">
+                <h2 class="hcar-detail">
+                    Carnival
+                </h2>
+                <!-- <button onclick="favorited8()" class="favorite-button detail-button" id="favorite8" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                <div class="stars-container">
+                    <div class="review-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="review-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="review-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="review-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="review-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colorless-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="review">
+                        40+ Reviewer
+                    </div>
+                </div>
+                <p class="pcar-detail">
+                    The Kia Carnival is a spacious and versatile minivan known for its comfortable interior, advanced safety features, and powerful engine options, making it a popular choice for families.                </p>
+                <div class="properties-container">
+                    <div class="car-properties-1">
+                        <p class="pcar-properties-1">
+                            Type Car
+                        </p>
+                        <p class="pcar-properties-2">
+                            MPV
+                        </p>
+                    </div>
+                    <div class="car-properties-2">
+                        <p class="pcar-properties-1">
+                            Capacity
+                        </p>
+                        <p class="pcar-properties-2">
+                            11 Person
+                        </p>
+                    </div>
+                    <div class="car-properties-1">
+                        <p class="pcar-properties-1">
+                            Transmission
+                        </p>
+                        <p class="pcar-properties-2">
+                            Automatic
+                        </p>
+                    </div>
+                    <div class="car-properties-2">
+                        <p class="pcar-properties-1">
+                            Petrol
+                        </p>
+                        <p class="pcar-properties-2">
+                            65 kmpl
+                        </p>
+                    </div>
+                </div>
+                <div class="car-price">
+                    &#8377; 500/ <span class="car-price-days">hour</span>
+                </div>
+                
+                <button class="rent-now-container-1" onclick="location.href='../Payment/Carnival.html'">
+                    Rent Now
+                </button>
+            </div>
+        </div>
+
+        <!-- section-3 -->
+        <div class="container-2">
+            <h2 class="card-name">
+                Reviews
+            </h2>
+            <div class="comment-counter">
+                13
+            </div>
+            <div class="first-commenter">
+                <div class="commenter-profile">
+                    <img src="../Car Rental imgs/commenter-1.png" alt="" class="commenter-pic">
+                </div>
+                <h2 class="commenter-name">
+                    Amar
+                </h2>
+                <h4 class="commenter-job">
+                    Student
+                </h4>
+                <div class="comment-date">
+                    21 July 2023
+                </div>
+                <div class="comment-star-container">
+                    <div class="comment-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="comment-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="comment-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="comment-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="comment-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colorless-star.png" class="stars" alt=""></button>
+                    </div>
+                </div>
+                <p class="comment">
+                    We are very happy with the service from the iDRIVE RENT.
+                    iDRIVE has a low price and also a large variety of cars with good and comfortable facilities.
+                    In addition, the service provided by the officers is also very friendly and very polite.
+                </p>
+                <p class="comment-res">
+                We are very happy with the service from the iDRIVE RENT App. iDRIVE has a low price . . . 
+                </p>
+            </div>
+            <div class="second-commenter">
+                <div class="commenter-profile">
+                    <img src="../Car Rental imgs/commenter-2.png" alt="" class="commenter-pic">
+                </div>
+                <h2 class="commenter-name">
+                    Sam
+                </h2>
+                <h4 class="commenter-job">
+                    Manager
+                </h4>
+                <div class="comment-date">
+                    20 Sept 2023
+                </div>
+                <div class="comment-star-container">
+                    <div class="comment-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="comment-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="comment-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="comment-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colored-star.png" class="stars" alt=""></button>
+                    </div>
+                    <div class="comment-star">
+                        <button class="star-button"><img src="../Car Rental imgs/colorless-star.png" class="stars" alt=""></button>
+                    </div>
+                </div>
+                <p class="comment">
+                    We are greatly helped by the services of the iDRIVE Rental Application.
+                    iDRIVE has low prices and also a wide variety of cars with good and comfortable facilities.
+                    In addition, the service provided by the officers is also very friendly and very polite.
+                </p>
+                <p class="comment-res">
+                    We are greatly helped by the services of the iDRIVE Rental Application. iDRIVE Rental has a low . . .
+                    </p>
+            </div>
+            <button class="showall-comments">
+                Show All &nbsp;&nbsp;&nbsp;&nbsp;<img src="../Car Rental imgs/down-arrow.png" alt="">
+            </button>
+        </div>
+
+        <!-- section 4 -->
+        <div class="popular-view">
+            <div class="popular-car recent" style="cursor:default;">Recent Cars</div>
+            <a href="../Car Category.html" class="view-all recent">View All</a >
+        </div>
+
+        <!-- section-5 -->
+        
+        <div class="container-4">
+            <div class="rent-popular nissangtr-1">
+                <div class="section-1">
+                    <h3 class="car-name">Baleno</h3>
+                    <p class="car-class">Hatchback</p>
+                    <!-- <button onclick="favorited2()" class="favorite-button" id="favorite2" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="../Car Rental imgs/Baleno/Baleno ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="../Car Rental imgs/gas-capacity.png" alt=""><p class="pic-detail">37L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="../Car Rental imgs/gearbox.png" alt=""><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="../Car Rental imgs/people-capacity.png" alt=""><p class="pic-detail">4 People</p>
+                    </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  280.00/<span style="color:#90A3BF;"><span style="color:#90A3BF;">hour</span>
+                        </div>
+                        <!-- <div class="buy-price-off"><del>$100.00</del></div> -->
+                        <button class="rent-now" onclick="location.href='Detail Car Rent.html';">Rent-Now</button>
+                </div>
+            </div>
+            <div class="rent-popular rolls-royce">
+                <div class="section-1">
+                    <h3 class="car-name">Creta</h3>
+                    <p class="car-class">SUV</p>
+                    <!-- <button onclick="favorited3()" class="favorite-button" id="favorite3" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="../Car Rental imgs/Creta/Creta ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="../Car Rental imgs/gas-capacity.png" alt=""><p class="pic-detail">60L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="../Car Rental imgs/gearbox.png" alt=""><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="../Car Rental imgs/people-capacity.png" alt=""><p class="pic-detail">5 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  470/<span style="color:#90A3BF;">hour</span>
+                        </div>
+                        <button class="rent-now" onclick="location.href='Cars/rolls-royce-preview.html'">Rent-Now</button>
+                </div>
+            </div>
+            <div class="rent-popular nissangtr-2">
+                <div class="section-1">
+                    <h3 class="car-name">Carnival</h3>
+                    <p class="car-class">MPV</p>
+                    <!-- <button onclick="favorited4()" class="favorite-button" id="favorite4" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <img src="../Car Rental imgs/Carnival/Carnival ext.png" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="../Car Rental imgs/gas-capacity.png" alt=""><p class="pic-detail">65L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="../Car Rental imgs/gearbox.png" alt=""><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="../Car Rental imgs/people-capacity.png" alt=""><p class="pic-detail">11 People</p>
+                    </div>
+                </div>
+                <div class="section-4">
+                        <div class="buy-price">
+                            &#8377;  500.00/<span style="color:#90A3BF;">hour<br></span>
+                        </div>
+                        <!-- <div class="buy-price-off"><del>$100.00</del></div> -->
+                        <button class="rent-now" onclick="location.href='Detail Car Rent.html';">Rent-Now</button>
+                </div>
+            </div>
+            <div class="rent-popular" id="myMPV-2">
+                <div class="section-1">
+                    <h3 class="car-name">Ertiga</h3>
+                    <p class="car-class">MPV</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="../Car Rental imgs/Ertiga/Ertiga ext.webp" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="../Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">62L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="../Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="../Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">7 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  370/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/all-new-rush-preview.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="mySUV-2">
+                <div class="section-1">
+                    <h3 class="car-name">Seltos</h3>
+                    <p class="car-class">SUV</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="../Car Rental imgs/Seltos/Seltos ext.jpg" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="../Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">58L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="../Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Manual</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="../Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">5 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  440/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/all-new-rush-preview.html'">Rent-Now</button>
+                </div>
+            </div>
+
+            <div class="rent-popular" id="sedanThree">
+                <div class="section-1">
+                    <h3 class="car-name">Corolla</h3>
+                    <p class="car-class">Sedan</p>
+                    <!-- <button onclick="favorited6()" class="favorite-button" id="favorite7" type="submit" aria-label="favorite button"><i class="fa fa-2 fa-heart" aria-hidden="true"></i></button> -->
+                </div>
+                <div class="section-2">
+                    <a><img src="../Car Rental imgs/Corolla/Corolla ext.jpeg" alt="" class="car-pic"></div>
+                <div class="section-3">
+                        <div class="gas-capacity">
+                            <img src="../Car Rental imgs/gas-capacity.png" alt="" class="gas-capacity-pic"><p class="pic-detail">50L</p>
+                        </div>
+                        <div class="gearbox">
+                            <img src="../Car Rental imgs/gearbox.png" alt="" class="gearbox-pic"><p class="pic-detail">Automatic</p>
+                        </div>
+                        <div class="people-capacity">
+                            <img src="../Car Rental imgs/people-capacity.png" alt="" class="people-capacity-pic"><p class="pic-detail">5 People</p>
+                        </div>
+                </div>
+                <div class="section-4">
+                    <div class="buy-price">
+                        &#8377;  360/<span style="color:#90A3BF;">hour</span>
+                    </div>
+                    <button class="rent-now" onclick="location.href='cars/all-new-rush-preview.html'">Rent-Now</button>
+                </div>
+            </div>
+
+        </div>
+    
+        </div> 
+    </div>
+</div>
+
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container-5">
+                <div class="leftfooter">
+                    <div class="company-name-footer">
+                        iDRIVE Rentals
+                    </div><br>
+                    <div class="about-iDRIVE Rentals">
+                        Our vision is to provide convenience and help increase your sales business.
+                    </div>
+                </div>
+                <!-- <div class="rightfooter">
+                    <div class="right-footer-left">
+                        <div class="footer-title">About</div><br>
+                            <a href="#" class="footer-link">How it works</a><br>
+                            <a href="#" class="footer-link">Featured</a><br>
+                            <a href="#" class="footer-link">Partner ship</a><br>
+                            <a href="#" class="footer-link">Business Relation</a>
+                    </div>
+                    <div class="right-footer-middle">
+                        <div class="footer-title">Community</div><br>
+                            <a href="#" class="footer-link">Events</a><br>
+                            <a href="#" class="footer-link">Blog</a><br>
+                            <a href="#" class="footer-link">Podcast</a><br>
+                            <a href="#" class="footer-link">Invite a friend</a>
+                    </div>
+                    <div class="right-footer-right">
+                        <div class="footer-title">Socials</div><br>
+                            <a href="#" class="footer-link">Disocrd</a><br>
+                            <a href="#" class="footer-link">Instagram</a><br>
+                            <a href="https://t.me/TookOver" target="_blank" class="footer-link">Telegram</a><br>
+                            <a href="#" class="footer-link">Facebook</a>
+                    </div>
+                </div> -->
+                <!-- res -->
+                <!-- <div class="rightfooter-res">
+                    <div class="right-footer-left">
+                        <div class="footer-title">About</div><br>
+                            <a href="#" class="footer-link">How it works</a><br>
+                            <a href="#" class="footer-link">Featured</a><br>
+                            <a href="#" class="footer-link">Partner ship</a><br>
+                            <a href="#" class="footer-link">Business Relation</a>
+                    </div>
+                    <div class="right-footer-right">
+                        <div class="footer-title">Socials</div><br>
+                            <a href="#" class="footer-link">Disocrd</a><br>
+                            <a href="#" class="footer-link">Instagram</a><br>
+                            <a href="https://t.me/TookOver" target="_blank" class="footer-link">Telegram</a><br>
+                            <a href="#" class="footer-link">Facebook</a>
+                    </div>
+                    <div class="right-footer-middle">
+                        <div class="footer-title">Community</div><br>
+                            <a href="#" class="footer-link">Events</a><br>
+                            <a href="#" class="footer-link">Blog</a><br>
+                            <a href="#" class="footer-link">Podcast</a><br>
+                            <a href="#" class="footer-link">Invite a friend</a>
+                    </div>
+                /res
+                </div> -->
+            <div class="hr-footer"></div>
+            <div class="bottomfooter">
+                <div class="all-rights-reserved">©2023 iDRIVE Rentals. All rights reserved</div>
+                <a href="#" class="terms">Terms & Condition</a>
+                <a href="#" class="privacy">Privacy & Policy</a>
+            </div>
+            <div class="bottomfooter-res">
+                <a href="#" class="terms">Terms & Condition</a>
+                <a href="#" class="privacy">Privacy & Policy</a><br><br>
+                <div class="all-rights-reserved">©2023 iDRIVE Rentals. All rights reserved</div>
+            </div>
+        </div>
+     
+    <script src="../Car Rental.js"></script>
+</body>
+</html>
